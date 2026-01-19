@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Inline Edit Accounts">
+        <div class="slds-p-around_medium">
+
+            <lightning-datatable
+                key-field="Id"
+                data={dataList}
+                columns={columnsList}
+                draft-values={savedDraftValues}
+                onsave={handleSave}
+                hide-checkbox-column>
+            </lightning-datatable>
+
+        </div>
+    </lightning-card>
+</template>
